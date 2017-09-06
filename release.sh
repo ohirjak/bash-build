@@ -40,6 +40,9 @@ git tag $RELEASE_VERSION
 # make a build
 ./build.sh
 
+# make a deploy
+# copy built file (target/uw-VERSION.sh) to nexus
+
 # Set snapshot version
 echo VERSION='"'$FUTURE_VERSION_SNAPSHOT'"' > $VERSION_FILE
 
