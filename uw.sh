@@ -3,5 +3,7 @@
 source build.info
 
 echo "version $VERSION"
-echo "test"
-echo "more work"
+
+uptime
+
+echo "made by us @ 2017"
