@@ -3,4 +3,5 @@
 source build.info
 
 echo "version $VERSION"
-echo test
+echo "test"
+echo "more work"
