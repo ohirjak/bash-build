@@ -1,6 +1,8 @@
 #!/bin/sh
 
-source version.info
+VERSION_FILE="version.info"
+
+source $VERSION_FILE
 
 echo "Current version: $VERSION"
 
@@ -26,18 +28,18 @@ echo "Future snapshot version: $FUTURE_VERSION_SNAPSHOT"
 echo "Releasing..."
 
 # Set release version
-echo VERSION='"'$RELEASE_VERSION'"' > build.info
+echo VERSION='"'$RELEASE_VERSION'"' > $VERSION_FILE
 
 # git commit
-git add build.info
+git add $VERSION_FILE
 git commit -m "release $RELEASE_VERSION"
 
 # git tag
 git tag $RELEASE_VERSION
 
 # Set snapshot version
-echo VERSION='"'$FUTURE_VERSION_SNAPSHOT'"' > build.info
+echo VERSION='"'$FUTURE_VERSION_SNAPSHOT'"' > $VERSION_FILE
 
 # git commit
-git add build.info
+git add $VERSION_FILE
 git commit -m "snapshot $FUTURE_VERSION_SNAPSHOT"
