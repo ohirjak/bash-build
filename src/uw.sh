@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source build.info
+VERSION=@@@VERSION@@@
 
 echo "version $VERSION"
 

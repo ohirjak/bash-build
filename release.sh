@@ -1,6 +1,6 @@
 #!/bin/sh
 
-source build.info
+source version.info
 
 echo "Current version: $VERSION"
 
