@@ -4,4 +4,4 @@ source build.info
 
 mkdir target
 
-cp uw.sh target/uw-$VERSION.sh
+cp src/uw.sh target/uw-$VERSION.sh
