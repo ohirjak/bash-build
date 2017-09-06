@@ -1,3 +1,5 @@
 #!/bin/sh
 
-echo "version 0.3"
+source build.info
+
+echo "version $VERSION"
