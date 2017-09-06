@@ -37,6 +37,9 @@ git commit -m "release $RELEASE_VERSION"
 # git tag
 git tag $RELEASE_VERSION
 
+# make a build
+./build.sh
+
 # Set snapshot version
 echo VERSION='"'$FUTURE_VERSION_SNAPSHOT'"' > $VERSION_FILE
 
