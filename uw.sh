@@ -1,3 +1,3 @@
 #!/bin/sh
 
-echo "version 0.1"
+echo "version 0.2"
